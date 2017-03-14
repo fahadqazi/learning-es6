@@ -8,7 +8,7 @@
 * every
 * some
 
-### forEach
+### **forEach**
 ```javascript
 
 var colors = ['red', 'green', 'blue']
@@ -23,7 +23,7 @@ colors.forEach(function(color){
 
 ```
 
-### sum using forEach
+### **sum using forEach**
 ```javascript
 var sum = 0;
 
@@ -33,5 +33,15 @@ array.forEach(function(number){
 	sum += number;
 });
 
+console.log(sum)
+```
+OR
+```javascript
+var sum = 0;
+var numbers = [1,2,3,4,5];
+function adder(number) {
+    sum += number
+}
+numbers.forEach(adder);
 console.log(sum)
 ```
