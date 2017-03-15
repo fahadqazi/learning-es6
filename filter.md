@@ -27,7 +27,7 @@ filteredProducts = products.filter(function(product){
 console.log(filteredProducts)
 ```
 
-example
+example, type = 'veg', qty>0, price<10
 ```javascript
 var products = [
     {name:'cucumber', type:'veg', qty:0, price: 1},
@@ -35,4 +35,9 @@ var products = [
     {name:'onion', type:'veg', qty:30, price: 13},
     {name:'orange', type:'fruit', qty:3, price: 5}
 ];
+
+products.filter(function(product){
+    return product.type === 'veg' && product.qty > 0 && product.price < 10;
+})
+
 ```
