@@ -13,3 +13,20 @@ new Promise(function(resolve, reject){
     resolve('bye'); //doesn't work, as a promise can only resolve once!
 });
 ```
+
+### Basic Promise usage
+```javascript
+var p = new Promise(function(resolve, reject){
+    if(true){
+        resolve();
+    }else{
+        reject();
+    }
+});
+
+p.then(function(){
+    //do something with result
+}).catch(function(){
+    //  Error!
+})
+```
