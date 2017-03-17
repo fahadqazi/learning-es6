@@ -57,7 +57,7 @@ function get(url){
 get('http://api.openweathermap.org/data/2.5/forecast?appid=35ab16ce21b847a36ece6eaba0df9244').then(function(response){
     console.log("Success !:", response);
 }, function(error){
-    console.error('Failed! " , error);
+    console.error("Failed! " , error);
 });
 ```
 
