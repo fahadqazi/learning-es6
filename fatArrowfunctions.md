@@ -68,5 +68,18 @@ const team = {
 }
 team.teamSummary(); //Error: Cannot read property teamName of undefined
 
+```
 
+```javascript
+var team = {
+    members: ['jane', 'bill'],
+    teamName: 'Super Squad',
+    teamSummary: function(){
+        return this.members.map((member) =>{
+            return `${member} is on team ${this.teamName}`;
+        })
+    }
+}
+
+team.teamSummary(); //["jane is on team Super Squad", "bill is on team Super Squad"]
 ```
