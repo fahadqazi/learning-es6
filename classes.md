@@ -42,7 +42,7 @@ class Car{
 
 class Toyota extends Car{
     constructor(options){
-        super();
+        super(options);
         this.color = options.color;
     }
     honk(){
