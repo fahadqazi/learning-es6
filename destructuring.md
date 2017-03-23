@@ -66,8 +66,8 @@ const companies = [
     {name: 'facebook', location:'Menlo Park'},
     {name: 'uber', location:'San Francisco'}
 ];  
-
-const [{ location }] = companies
+//To get the location for first object
+const [{ location }] = companies	//Mountain View
 ```
 
 example
