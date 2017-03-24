@@ -31,6 +31,24 @@ gen.next();     //done:false
 gen.next();     //done:true
 ```
 
+## another example
+```javascript
+function outter(){
+    console.log('outter-1');
+    function* inner(){
+        console.log('inner-1');
+        yield;
+        console.log('inner-2');
+    }
+    console.log('outter-2');
+    var inr = inner();
+    console.log('outter-3');
+    inr.next();
+    console.log('outter-4');
+    inr.next();
+}
+```
+#### `The generator function inner is wrapped inside an outter function`
 
 ### Generator Delegation
 
