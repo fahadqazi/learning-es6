@@ -46,9 +46,20 @@ function outter(){
     inr.next();
     console.log('outter-4');
     inr.next();
+    console.log('outter-5');
 }
 ```
-#### `The generator function inner is wrapped inside an outter function`
+#### `Explanation`
+- Outter function wraps around a generator function
+- running this outter function `outter()` should show:
+    
+    * outter-1
+    * outter-2
+    * outter-3
+    * inner-1
+    * outter-4
+    * inner-2
+    * outter-5
 
 ### Generator Delegation
 
