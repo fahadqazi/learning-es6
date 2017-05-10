@@ -23,8 +23,6 @@ fetch(url)
 fetch(url)
     .then(response => response.json())  
     .then(data => console.log(data))    //this now works
-
-
 ```
 
 ### Another issue with Fetch
@@ -45,5 +43,4 @@ fetch(url)
 // that is when it hit the server and isn't able to find the specific end point
 // if it uses a wrong url completely like the following, it does hit the CATCH case
 const url = "http://jsonplaceholder.tttttttttypicode.com/posts131231/";
-
 ```
