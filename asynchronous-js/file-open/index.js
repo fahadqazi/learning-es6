@@ -1,0 +1,9 @@
+var fs = require('fs');
+
+fs.readFile(__dirname + "/words.txt", "utf-8", function(error, content){
+	if(error){
+	    console.log(error)
+		return;
+	}
+	console.log(content);
+    });
